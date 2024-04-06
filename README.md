@@ -1,6 +1,9 @@
 Integrantes del Grupo :
+
 Luis E. Mantilla.
-Edward Trejos
+
+Edward Trejos.
+
 Alexander Rodriguez.
 
 
