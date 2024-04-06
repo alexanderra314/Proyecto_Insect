@@ -71,19 +71,19 @@ def app():
     
     st.markdown("<div class='titulos'> Arquitectura </div>",  unsafe_allow_html=True)
 
-    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/Arquitectura.jpg"
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/estructura1.jpg"
     st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
     
+    st.markdown("<div class='titulos'> Diagrama de Roles </div>",  unsafe_allow_html=True)
+
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/Teams.jpg"
+    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
+   
     st.markdown("<div class='titulos'> Estructura de BD - MER </div>",  unsafe_allow_html=True)
 
     url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/Mer.jpg"
     st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
     
-    st.markdown("<div class='titulos'> Diagrama de Roles </div>",  unsafe_allow_html=True)
-
-    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/diagrama_de_roles.jpg"
-    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
-   
     
      # Línea vertical separadora
     st.markdown("<div class='separator'></div>", unsafe_allow_html=True)

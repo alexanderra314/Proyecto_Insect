@@ -68,13 +68,8 @@ def app():
     """
     st.markdown(custom_css, unsafe_allow_html=True)
     st.header('Entorno de Trabajo', divider='rainbow')  
-    st.divider()
-    #
     
-    st.markdown("<div class='titulos'> Ing. Edward Trejos </div>",  unsafe_allow_html=True)
-    st.markdown("<div class='titulos'> Ing. Kuis E. Mantilla </div>",  unsafe_allow_html=True)
-    st.markdown("<div class='titulos'> Ing. Alexander Rodriguez </div>",  unsafe_allow_html=True)
-    st.divider()
+    
     st.markdown("<div class='titulos'> Roles </div>",  unsafe_allow_html=True)
     
     txt = st.text_area(
@@ -127,6 +122,13 @@ def app():
     )
     
     txt = st.text_area(
+        "   Especialista en base de datos:", 
+        "•	Encargado de la gestión del motor de base de datos.\n"
+        "•	garantizando una gestión.\n"
+        "•	efeciente y segura de los datos.",
+    )
+    
+    txt = st.text_area(
         "   Especialista en Biodiversidad/Entomología:", 
         "•	Proporciona conocimientos especializados sobre la clasificación de insectos y la biodiversidad.\n"
         "•	Ayuda en la recopilación de datos y en la validación del modelo de inteligencia artificial.\n"
@@ -165,10 +167,7 @@ def app():
     
     st.markdown("<div class='Metodología de trabajo'> Roles </div>",  unsafe_allow_html=True)
     
-    txt = st.text_area(
-        " Utilizamos Scrum porque es un marco de trabajo ágil que permite una entrega rápida y flexible de productos de alta calidad al cliente. Scrum promueve la transparencia, la colaboración y la adaptación continua, lo que ayuda a los equipos a responder de manera efectiva a los cambios en los requisitos del proyecto y a mantener un enfoque centrado en el valor del negocio.",
-    )
-    
+
      # Línea vertical separadora
     st.markdown("<div class='separator'></div>", unsafe_allow_html=True)
 

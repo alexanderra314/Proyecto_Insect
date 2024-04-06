@@ -1,6 +1,15 @@
 import streamlit as st
 
-def contenido_educativo():
+
+def app():
+    
+    st.set_page_config(
+        page_title='Home Page', 
+        page_icon='🌍', 
+        layout='centered', 
+        initial_sidebar_state='auto'
+    )
+    
     custom_css = """
         <style>
             body {
@@ -9,6 +18,10 @@ def contenido_educativo():
             .container{
                 text-align: center;
                 font-size: 14px;
+            }
+            .titulos{
+                text-align: center;
+                font-size: 28px;
             }
             .header {
                 font-family: "Source Sans Pro", sans-serif;
@@ -50,38 +63,46 @@ def contenido_educativo():
                 color: #333;
                 border-top: 1px solid #ccc;
             }
-            .link-button {
-            background-color: transparent;
-            border: none;
-            color: blue;
-            text-decoration: underline;
-            cursor: pointer;
-            font-size: 14px;
-            padding: 0;
-            }
             
         </style>
     """
-# Insertar el CSS para el fondo y colores de las secciones
     st.markdown(custom_css, unsafe_allow_html=True)
-    st.header("Contenido Educativo sobre Insectos y su Rol en los Ecosistemas", divider='rainbow')
-
-    st.subheader("Artículos:")
-    st.markdown("- [Importancia de los insectos en losAgricultura](https://www.mag.go.cr/bibliotecavirtual/H10-10951.pdf)")
-    st.markdown("- [Los insectos y su papel en la Bitecnologia](https://www.inecol.mx/inecol/index.php/es/ct-menu-item-25/ct-menu-item-27/17-ciencia-hoy/1785-los-insectos-fuente-de-innovaciones-biotecnologicas)")
-    st.markdown("- [Atlas de los insectos](https://www.tierra.org/wp-content/uploads/2020/12/Atlas-Insectos-Amigos-Tierra-2020.pdf)")
-
-    st.subheader("Videos:")
-    st.video("https://www.youtube.com/watch?v=AKdKM643QSo")
-
-    st.subheader("Infografías:")
-    #st.image("https://storage.cloud.google.com/bucket_insect/Estructura/estructura1.jpg", use_column_width=True)
+    st.header('Nuestros Modelo ', divider='rainbow')
+    st.markdown("<div class='container'> MODELO YOLO M 25 EPOCAS. </div>",  unsafe_allow_html=True)
+    st.divider()
     
-         # Línea vertical separadora
+    st.markdown("<div class='titulos'> Datasets </div>",  unsafe_allow_html=True)
+
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/Dataset.jpg"
+    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
+    
+    st.markdown("<div class='titulos'> Balanceo de Clases </div>",  unsafe_allow_html=True)
+
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/balanceo.jpg"
+    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
+   
+    st.markdown("<div class='titulos'> Clases </div>",  unsafe_allow_html=True)
+
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/Clases.jpg"
+    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
+    
+    st.markdown("<div class='titulos'> Matriz de Confusión </div>",  unsafe_allow_html=True)
+
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/Matrix.jpg"
+    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
+    
+    
+    st.markdown("<div class='titulos'> Metricas </div>",  unsafe_allow_html=True)
+
+    url_imagen = "https://storage.cloud.google.com/bucket_insect/Estructura/metrica.jpg"
+    st.image(url_imagen, caption='Imagen desde Google Cloud Storage', use_column_width=True)
+    
+    
+     # Línea vertical separadora
     st.markdown("<div class='separator'></div>", unsafe_allow_html=True)
 
     # Footer
     st.markdown("<div class='footer'>Hecho con Streamlit - Desarrollado por Estudiantes Especializacion IA UOA @2024-1</div>", unsafe_allow_html=True)
 
-if __name__ == "__main__":
-    contenido_educativo()
+if __name__ == '__main__':
+    app()
