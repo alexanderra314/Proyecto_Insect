@@ -87,8 +87,6 @@ def main():
     st.divider()
 
     # Sección para que los usuarios añadan un nuevo hallazgo con ubicación
-    #st.header("Añade una ubicaciíon de tu  Hallazgo")
-    #st.divider()
     title = st.text_input("Título del Hallazgo:")
     description = st.text_area("Descripción:")
     user = st.text_input("Nombre del Usuario:")
@@ -103,9 +101,7 @@ def main():
     location = folium.LatLngPopup()  # Permitir al usuario hacer clic en el mapa para seleccionar una ubicación
     m.add_child(location)
     folium_static(m)
-    
-    #    # Obtener el contenido del portapapeles
-    #content = pyperclip.paste()
+
 
 
         

@@ -128,7 +128,6 @@ if insecto_info:
     nombre, descripcion, distribucion_geo, estado_conservacion, imagen_ruta, clase, dieta,tipo,consumo,prefe,patron, habitat, tipo_a,desh,temp,hum,alt,precip,of,ciclo_vida,eta,dur,desc,fact,comportamiento = insecto_info
     st.markdown(custom_css, unsafe_allow_html=True)
     st.header(nombre, divider='rainbow')
-    #st.title(nombre)
     st.image(imagen_ruta, caption=nombre, use_column_width=True)
     st.write("DESCRIPCIÓN:", descripcion)
     st.write("DISTRIBUCIÓN GEOGRAFICA:", distribucion_geo)

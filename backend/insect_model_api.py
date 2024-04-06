@@ -39,19 +39,7 @@ async def predict_insect(request: Request, file: UploadFile = File(...)):
 
         insect_model = InsectModel()
         predictions = insect_model.predict(temp_file_path)
-        print("predictions..."+predictions)
-        
-#        # Convertir las predicciones a un formato JSON-friendly
-#        json_predictions = []
-#        for pred in predictions:
-#            json_predictions.append({
-#                "class": pred["label"],
-#                "confidence": pred["confidence"],
-#                "bbox": pred["bbox"]
-#            })
-#
-#        logger.info("Predictions:", json_predictions)
-#
+
         return predictions
     except Exception as e:
         logger.error(f"Error durante el procesamiento de la solicitud: {e}")

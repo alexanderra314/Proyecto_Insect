@@ -67,10 +67,6 @@ def app():
     st.markdown(custom_css, unsafe_allow_html=True)
    
     st.header('Identificación Inteligente de Insectos.', divider='rainbow')
-    #st.markdown("<div class='header'> Identificación Inteligente de Insectos. </div>",  unsafe_allow_html=True)
-
-
-    #st.divider()
 
     st.markdown("<div class='container'> vamos a Desarrollar una aplicación web amigable con el usuario que emplee inteligencia artificial (IA) para identificar con precisión y proporcionar información detallada sobre diversos insectos a partir de fotografías tomadas o cargadas por los usuarios. </div>",  unsafe_allow_html=True)
     st.markdown("<div class='container'> La aplicación tiene como  objetivo promover la conciencia sobre la biodiversidad, asistir en la investigación científica y comprometer a los usuarios en proyectos de ciencia ciudadana </div>",  unsafe_allow_html=True)

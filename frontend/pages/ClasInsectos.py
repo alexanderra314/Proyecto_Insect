@@ -1,13 +1,8 @@
 import streamlit as st
 from PIL import Image
-import requests
-import json
+import requests 
 import os
 import shutil
-#streamlit run home.py
-#import pages.Geo_Interaccion as geo_interaccion
-#from pages import Interaccion_participativa
-##from pages.Interaccion_participativa import show_participatory_interaction_page
 
 
 

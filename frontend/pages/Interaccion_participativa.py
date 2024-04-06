@@ -106,7 +106,7 @@ def main():
         st.success("¡Hallazgo guardado con éxito!")
 
     # Sección para mostrar los hallazgos almacenados
-    #st.header("Hallazgos Guardados")
+
     st.header("Hallazgos Guardados", divider='rainbow')
     discoveries = show_discoveries()
     for discovery in discoveries:

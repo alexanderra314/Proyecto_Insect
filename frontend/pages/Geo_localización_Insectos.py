@@ -38,7 +38,6 @@ def show_discoveries_map(discoveries):
 
 # Función principal de la aplicación
 def main():
-    #st.title("Mapa de Hallazgos de Insectos")
     st.set_page_config(
         page_title='Home Page', 
         page_icon='🌍', 

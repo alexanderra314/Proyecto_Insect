@@ -75,7 +75,6 @@ def contenido_educativo():
     st.video("https://www.youtube.com/watch?v=AKdKM643QSo")
 
     st.subheader("Infografías:")
-    #st.image("https://storage.cloud.google.com/bucket_insect/Estructura/estructura1.jpg", use_column_width=True)
     
          # Línea vertical separadora
     st.markdown("<div class='separator'></div>", unsafe_allow_html=True)

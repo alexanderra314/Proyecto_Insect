@@ -5,11 +5,8 @@ from enum import Enum, auto
 from abc import ABC
 from ultralytics import YOLO
 import subprocess
-
 from torchvision.transforms import functional as F
-from PIL import Image
 
-from ultralytics import YOLO
 
 # Define el directorio actual
 current_directory = os.path.dirname(os.path.realpath(__file__))
@@ -90,6 +87,8 @@ class InsectModel(Model):
     def predict(self, image_path: str):
         print("Model path:", self.model_path)  # Verifica la ruta del modelo
         print("Image path:", image_path)
+        
+        #Segunda Opcion
 
 #        model = YOLO(self.model_path)
 #        results = model(image_path, save=True, imgsz=640, conf=0.5, max_det=1, visualize=False, save_txt=True)
