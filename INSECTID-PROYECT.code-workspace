@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "insetid_Proyect/model"
+		},
+		{
+			"path": "insetid_Proyect/backend"
+		},
+		{
+			"path": "insetid_Proyect/frontend"
+		}
+	],
+	"settings": {
+		"terminal.integrated.defaultProfile.windows": "Command Prompt"
+	}
+}
